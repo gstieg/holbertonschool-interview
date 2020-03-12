@@ -45,9 +45,10 @@ int is_palindrome(listint_t **head)
 	{
 		if (data->n != right->n)
 			return (0);
-		if (data->n == right->n)
+		else if (data->n == right->n)
 			return (1);
 		data = data->next;
 		right = right->next;
 	}
+	return (1);
 }
