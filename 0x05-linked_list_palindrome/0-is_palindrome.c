@@ -2,8 +2,9 @@
 
 /**
  * reverse - reverse the linked list
- *
  * @head: pointer to the linked list
+ *
+ * Return: reversed linked list
  */
 void *reverse(listint_t *head)
 {
@@ -11,7 +12,7 @@ void *reverse(listint_t *head)
 	listint_t *current = head;
 	listint_t *prevnode = NULL;
 
-	while(nextnode)
+	while (nextnode)
 	{
 		nextnode = current->next;
 		current->next = prevnode;
@@ -49,5 +50,4 @@ int is_palindrome(listint_t **head)
 		data = data->next;
 		right = right->next;
 	}
-	return (1);
 }
